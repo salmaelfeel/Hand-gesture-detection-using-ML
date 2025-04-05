@@ -1,0 +1,22 @@
+Sorry Eng. Mohamed,
+I wasn’t able to record a video because I worked on Google Colab, and after reaching the final step, I discovered that real-time video capturing isn’t supported. However, I tried a few workarounds:
+
+A)Captured individual frames from a prerecorded video using JavaScript inside Colab:
+
+you will find in this drive the prerecorded video I used for option A)
+
+here are the results in brief
+	-predicted gestures in this video:
+	['call', 'four', 'like', 'mute', 'ok', 'peace', 'peace_inverted', 'stop', 'three', 'three2']
+	-Versus actual gestures in the video:
+	['Call', 'peace', 'like', '4', '3', 'peace', '1', 'stop', 'stop_inv', 'palm']
+
+
+B)Simulated real-time prediction by looping over multiple frame captures
+The results weren't that accurate as you can tell, So I switched to option B) which showed better results, about 90% accuracy
+
+the results:
+	-predicted gestures in this video:	
+	Call peace no hand detected like dislike ok stop_inverted mute
+	-Versus actual gestures in the video:
+	['Call', 'peace', 'nothing', 'like', 'dislike', 'ok', 'peace_inverted', 'mute']
